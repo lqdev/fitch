@@ -36,18 +36,19 @@ let DisplayInfo () =
 
     let (rows:IRenderable seq) = 
         seq {
-            new Text($"Distribution: {distroName}", new Style(Color.DarkRed)) :> IRenderable
-            new Text($"Kernel: {kernelName}", new Style(Color.DarkRed)) :> IRenderable
-            new Text($"Shell: {shell}", new Style(Color.DarkRed)) :> IRenderable
-            new Text($"User: {user}", new Style(Color.Yellow)) :> IRenderable
-            new Text($"Hostname: {hostName}", new Style(Color.Yellow)) :> IRenderable
-            new Text($"Uptime: {uptime}", new Style(Color.Blue)) :> IRenderable
-            new Text($"Memory: {memInfo}", new Style(Color.Blue)) :> IRenderable
-            new Text($"LocalIP: {localIp}", new Style(Color.Green)) :> IRenderable
+            new Text($"Distribution: {distroName}", new Style(Color.HotPink))
+            new Text($"Kernel: {kernelName}", new Style(Color.HotPink))
+            new Text($"Shell: {shell}", new Style(Color.HotPink))
+            new Text($"User: {user}", new Style(Color.Yellow))
+            new Text($"Hostname: {hostName}", new Style(Color.Yellow))
+            new Text($"Uptime: {uptime}", new Style(Color.Blue))
+            new Text($"Memory: {memInfo}", new Style(Color.Blue))
+            new Text($"LocalIP: {localIp}", new Style(Color.Green))
             
             //Uncomment to display public IP
-            // new Text($"PublicIP: {publicIp}", new Style(Color.Green)) :> IRenderable
+            // new Text($"PublicIP: {publicIp}", new Style(Color.Green))
         }
+        |> Seq.map(fun x -> x :> IRenderable)
 
  
     let distroIdFig = new FigletText(distroId)
