@@ -37,7 +37,7 @@ let DisplayInfo () =
     let (rows:IRenderable seq) = 
         seq {
             new Text($"Distribution: {distroName}", new Style(Color.DarkRed)) :> IRenderable
-            new Text($"Kernel: {distroName}", new Style(Color.DarkRed)) :> IRenderable
+            new Text($"Kernel: {kernelName}", new Style(Color.DarkRed)) :> IRenderable
             new Text($"Shell: {shell}", new Style(Color.DarkRed)) :> IRenderable
             new Text($"User: {user}", new Style(Color.Yellow)) :> IRenderable
             new Text($"Hostname: {hostName}", new Style(Color.Yellow)) :> IRenderable
