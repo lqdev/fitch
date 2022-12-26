@@ -32,12 +32,12 @@ Command line system information display utility for Linux systems built with .NE
     dotnet publish -c Release
     ```
 
-    Running this command will generate an executable in the `
+    Running this command will generate an executable called `fitch` in the *bin/Release/net7.0/linux-x64/publish* directory.
 
 
 ## Run application
 
-1. Copy the executable from the publish directory (`bin/Release/net7.0/linux-x64/publish`) to the `/usr/bin/` directory.
+1. Copy the executable from the publish directory (*bin/Release/net7.0/linux-x64/publish*) to the */usr/bin/* directory.
 1. Run the following command in your terminal
 
     ```bash
