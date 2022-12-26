@@ -27,8 +27,9 @@ let DisplayInfo () =
     let localIp = 
         getLocalIpAddress() 
 
-    let publicIp = 
-        getPublicIpAddressAsync("http://ident.me") |> Async.RunSynchronously
+    // Uncomment to get public IP
+    // let publicIp = 
+    //     getPublicIpAddressAsync("http://ident.me") |> Async.RunSynchronously
     
     let uptime = 
         getUptime("/proc/uptime")
@@ -43,7 +44,9 @@ let DisplayInfo () =
             new Text($"Uptime: {uptime}", new Style(Color.Blue)) :> IRenderable
             new Text($"Memory: {memInfo}", new Style(Color.Blue)) :> IRenderable
             new Text($"LocalIP: {localIp}", new Style(Color.Green)) :> IRenderable
-            new Text($"PublicIP: {publicIp}", new Style(Color.Green)) :> IRenderable
+            
+            //Uncomment to display public IP
+            // new Text($"PublicIP: {publicIp}", new Style(Color.Green)) :> IRenderable
         }
 
  

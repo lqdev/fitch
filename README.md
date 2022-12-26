@@ -20,6 +20,11 @@ Command line system information display utility for Linux systems built with .NE
 
 1. Clone [fitch repo](http://www.luisquintanilla.me/github/fitch)
 1. Nagivate to the project directory.
+
+    ```bash
+    cd fitch
+    ```
+
 1. Run the build command using dotnet CLI
 
     ```dotnetcli
@@ -38,6 +43,11 @@ Command line system information display utility for Linux systems built with .NE
 ## Run application
 
 1. Copy the executable from the publish directory (*bin/Release/net7.0/linux-x64/publish*) to the */usr/bin/* directory.
+
+    ```bash
+    cp bin/Release/net7.0/linux-x64/publish/fitch /usr/bin/
+    ```
+
 1. Run the following command in your terminal
 
     ```bash
