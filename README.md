@@ -1,6 +1,6 @@
 # Fitch
 
-Command line system information display utility for Linux systems built with .NET.
+Command line system information display utility for Linux systems built with .NET (F#).
 
 ![Fitch CLI Tool](./images/fitch-display.png)
 
