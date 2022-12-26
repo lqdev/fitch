@@ -18,7 +18,7 @@ Command line system information display utility for Linux systems built with .NE
 
 ### Instructions
 
-1. Clone [fitch repo]()
+1. Clone [fitch repo](http://www.luisquintanilla.me/github/fitch)
 1. Nagivate to the project directory.
 1. Run the build command using dotnet CLI
 
