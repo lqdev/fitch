@@ -46,6 +46,11 @@ Command line system information display utility for Linux systems built with .NE
 
 1. (Optional) Add the `fitch` command to your shell config file to start when your shell starts. 
 
+## To-Dos
+
+- [ ] Enable customization through config file
+- [ ] Publish to NuGet as dotnet global tool
+
 ## Acknowledgements
 
 This project was inspired by [Nitch](https://github.com/unxsh/nitch) and [Neofetch](https://github.com/dylanaraps/neofetch)
