@@ -23,7 +23,10 @@ let DisplayInfo () =
 
     let memInfo = 
         getMemoryInfo("/proc/meminfo")
-        
+
+    let cpuModel = 
+        getCPUModelName("/proc/cpuinfo")
+
     let localIp = 
         getLocalIpAddress() 
 
@@ -31,6 +34,8 @@ let DisplayInfo () =
     // let publicIp = 
     //     getPublicIpAddressAsync("http://ident.me") |> Async.RunSynchronously
     
+    // 
+
     let uptime = 
         getUptime("/proc/uptime")
 
@@ -43,6 +48,7 @@ let DisplayInfo () =
             new Text($"Hostname: {hostName}", new Style(Color.Yellow))
             new Text($"Uptime: {uptime}", new Style(Color.Blue))
             new Text($"Memory: {memInfo}", new Style(Color.Blue))
+            new Text($"CPU: {cpuModel}", new Style(Color.Blue))
             new Text($"LocalIP: {localIp}", new Style(Color.Green))
             
             //Uncomment to display public IP
