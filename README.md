@@ -4,7 +4,7 @@ Command line system information display utility for Linux systems built with .NE
 
 ![Fitch CLI Tool](./images/fitch-display.png)
 
-**NOTE: This application should work on most Linux systems. However, it's only been tested on Arch-based distributions like Manjaro.**
+**NOTE: This application should work on most Linux systems. However, it's only been tested on Arch-based distributions like Manjaro and Debian-based distributions like Ubuntu**
 
 ## Dependencies
 
