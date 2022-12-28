@@ -120,3 +120,29 @@ let getUptime (fileName:string) =
 
 let getUser (envVar:string) = 
     Environment.GetEnvironmentVariable(envVar)
+
+let getCPUModelName (fileName:string) = 
+    match File.Exists(fileName) with
+    | true -> 
+        let lines = 
+            File.ReadLines(fileName)
+            |> List.ofSeq
+
+        match lines.IsEmpty with
+        | true -> ""
+        | false -> 
+            let configProperties = 
+                lines
+                |> List.filter(fun line-> line.Contains(':'))
+                |> List.map(fun line -> 
+                    let kvPairs = line.Split(':')
+                    let k,v = kvPairs[0].Trim(),kvPairs[1].Trim()
+                    k,v)
+                |> List.filter(fun (k,_) -> k = "model name")
+
+            match configProperties.IsEmpty with
+            | true -> ""
+            | false -> 
+                configProperties |> List.head |> snd
+
+    | false -> ""    
