@@ -58,4 +58,4 @@ Command line system information display utility for Linux systems built with .NE
 
 ## Acknowledgements
 
-This project was inspired by [Nitch](https://github.com/unxsh/nitch) and [Neofetch](https://github.com/dylanaraps/neofetch)
+This project was inspired by [Nitch](https://github.com/unxsh/nitch), [Neofetch](https://github.com/dylanaraps/neofetch) and made in [WSL](https://learn.microsoft.com/en-us/windows/wsl/) 🐧
