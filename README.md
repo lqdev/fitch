@@ -4,6 +4,8 @@ Command line system information display utility for Linux systems built with .NE
 
 ![Fitch CLI Tool](./images/fitch-display.png)
 
+[![Generic badge](https://img.shields.io/badge/Made%20with-FSharp-rgb(1,143,204).svg)](https://shields.io/)
+
 **NOTE: This application should work on most Linux systems. However, it's only been tested on Arch-based distributions like Manjaro and Debian-based distributions like Ubuntu**
 
 ## Dependencies
@@ -18,37 +20,32 @@ Command line system information display utility for Linux systems built with .NE
 
 ### Instructions
 
-1. Clone [fitch repo](http://www.luisquintanilla.me/github/fitch)
-1. Nagivate to the project directory.
+1. Clone [fitch repo](http://www.luisquintanilla.me/github/fitch) in your Linux machine
+
+    ```
+    git clone http://www.luisquintanilla.me/github/fitch
+    ```
+
+
+
+1. Nagivate to the project directory and run the script Setup.sh
 
     ```bash
     cd fitch
     ```
 
-1. Run the build command using dotnet CLI
-
-    ```dotnetcli
-    dotnet build
+    ```bash
+    ./Setup.sh
     ```
 
-1. Run the publish command using the dotnet CLI
+    ![Setup.sh](./images/setup.gif)
 
-    ```dotnetcli
-    dotnet publish -c Release
-    ```
-
-    Running this command will generate an executable called `fitch` in the *bin/Release/net7.0/linux-x64/publish* directory.
+    Running this script will generate an executable called `fitch` in the *bin/Release/net7.0/linux-x64/publish* directory and copy it to the */usr/bin/* directory.
 
 
 ## Run application
 
-1. Copy the executable from the publish directory (*bin/Release/net7.0/linux-x64/publish*) to the */usr/bin/* directory.
-
-    ```bash
-    cp bin/Release/net7.0/linux-x64/publish/fitch /usr/bin/
-    ```
-
-1. Run the following command in your terminal
+1. Run the `fitch` command in your terminal
 
     ```bash
     fitch
