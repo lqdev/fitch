@@ -23,10 +23,8 @@ Command line system information display utility for Linux systems built with .NE
 1. Clone [fitch repo](http://www.luisquintanilla.me/github/fitch) in your Linux machine
 
     ```
-    git clone http://www.luisquintanilla.me/github/fitch
+    git clone https://github.com/lqdev/fitch.git
     ```
-
-
 
 1. Nagivate to the project directory and run the script Setup.sh
 
