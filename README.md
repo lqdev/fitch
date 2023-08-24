@@ -12,7 +12,7 @@ Command line system information display utility for Linux systems built with .NE
   - Manjaro
 - Debian
   - Ubuntu
-- NixOS
+- NixOS. For additional guidance, see this [article](https://www.luisquintanilla.me/wiki/nixos-dotnet-packages-source).
 
 ## Dependencies
 
