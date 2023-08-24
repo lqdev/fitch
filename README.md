@@ -6,7 +6,13 @@ Command line system information display utility for Linux systems built with .NE
 
 [![Generic badge](https://img.shields.io/badge/Made%20with-FSharp-rgb(1,143,204).svg)](https://shields.io/)
 
-**NOTE: This application should work on most Linux systems. However, it's only been tested on Arch-based distributions like Manjaro and Debian-based distributions like Ubuntu**
+**NOTE: This application should work on most Linux systems. However, it's only been tested on the following distributions:**
+
+- Arch
+  - Manjaro
+- Debian
+  - Ubuntu
+- NixOS
 
 ## Dependencies
 
