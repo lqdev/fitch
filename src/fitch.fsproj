@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <LangVersion>preview</LangVersion>
 
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <PackageId>fitch</PackageId>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>fitch</ToolCommandName>
