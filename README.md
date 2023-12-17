@@ -22,7 +22,7 @@ Command line system information display utility for Linux systems built with .NE
 
 ### Prerequisites
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 ### Install from nuget
 
