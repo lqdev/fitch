@@ -3,10 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <PublishSingleFile>true</PublishSingleFile>    
-    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
-    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
     <LangVersion>preview</LangVersion>
+
+    <Version>1.1.0</Version>
+    <PackageId>fitch</PackageId>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>fitch</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

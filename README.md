@@ -18,13 +18,25 @@ Command line system information display utility for Linux systems built with .NE
 
 - [Spectre.Console](https://spectreconsole.net/)
 
-## Build from source
+## Installation
 
 ### Prerequisites
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) 
+- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
 
-### Instructions
+### Install from nuget
+
+#### Instructions
+
+Installation is as easy as:
+
+```bash
+dotnet tool install --global fitch
+```
+
+### Build from source
+
+#### Instructions
 
 1. Clone [fitch repo](http://www.luisquintanilla.me/github/fitch) in your Linux machine
 
@@ -39,7 +51,7 @@ Command line system information display utility for Linux systems built with .NE
     ```
 
     ```bash
-    ./Setup.sh
+    bash ./Setup.sh
     ```
 
     ![Setup.sh](./images/setup.gif)
@@ -49,7 +61,7 @@ Command line system information display utility for Linux systems built with .NE
 
 ## Run application
 
-1. Run the `fitch` command in your terminal
+1. For both cases just type `fitch` in your terminal
 
     ```bash
     fitch
@@ -60,7 +72,6 @@ Command line system information display utility for Linux systems built with .NE
 ## To-Dos
 
 - [ ] Enable customization through config file
-- [ ] Publish to NuGet as dotnet global tool
 
 ## Acknowledgements
 
