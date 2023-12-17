@@ -24,7 +24,7 @@ Command line system information display utility for Linux systems built with .NE
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-### Install from nuget
+### Install from [nuget](https://www.nuget.org/packages/fitch)
 
 #### Instructions
 
