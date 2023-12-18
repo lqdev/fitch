@@ -1,24 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="Types.fs" />
-    <Compile Include="SystemInfo.fs" />
-    <Compile Include="DisplayInfo.fs" />
-  </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Types.fs"/>
+        <Compile Include="SystemInfo.fs"/>
+        <Compile Include="DisplayInfo.fs"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="ByteSize" Version="2.1.1" />
-    <PackageReference Include="Spectre.Console" Version="0.48" />
-    <PackageReference Include="Spectre.Console.ImageSharp" Version="0.48.0" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <EmbeddedResource Include="distro_logos\*.png" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="ByteSize" Version="2.1.1"/>
+        <PackageReference Include="Spectre.Console" Version="0.48"/>
+        <PackageReference Include="Spectre.Console.ImageSharp" Version="0.48.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="distro_logos\*.png"/>
+    </ItemGroup>
 
 </Project>

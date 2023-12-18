@@ -94,7 +94,10 @@ let getMemoryInfo (fileName: string) =
     ""
 
 let getShell (envVar: string) =
-  Environment.GetEnvironmentVariable(envVar).Split('/') |> Array.last
+  Environment.GetEnvironmentVariable envVar
+  |> Option.ofObj
+  |> Option.map (fun v -> v.Split('/') |> Array.last)
+  |> Option.defaultValue ""
 
 let getLocalIpAddress () =
   let hostName = Dns.GetHostName()

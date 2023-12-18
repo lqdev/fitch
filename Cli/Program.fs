@@ -1,2 +1,1 @@
-﻿
-DisplayInfo.displayInfo()
+﻿DisplayInfo.displayInfo ()
