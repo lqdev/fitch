@@ -8,16 +8,7 @@ echo " "
 echo "===================================================================== "
 echo " "
 
-cd src
-
-dotnet build
-
 dotnet publish -c Release
-
-sudo cp bin/Release/net7.0/linux-x64/publish/fitch /usr/bin/
-
-cd ..
-
-fitch
-
-
+dotnet pack
+dotnet tool uninstall -g fitch
+dotnet tool install -g fitch --add-source nupkg

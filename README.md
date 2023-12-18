@@ -5,6 +5,7 @@ Command line system information display utility for Linux systems built with .NE
 ![Fitch CLI Tool](./images/fitch-display.png)
 
 [![Generic badge](https://img.shields.io/badge/Made%20with-FSharp-rgb(1,143,204).svg)](https://shields.io/)
+![Tests][tests]
 
 **NOTE: This application should work on most Linux systems. However, it's only been tested on the following distributions:**
 
@@ -76,3 +77,6 @@ dotnet tool install --global fitch
 ## Acknowledgements
 
 This project was inspired by [Nitch](https://github.com/unxsh/nitch), [Neofetch](https://github.com/dylanaraps/neofetch) and made with [WSL](https://learn.microsoft.com/en-us/windows/wsl/) 🐧
+
+
+[tests]: https://github.com/lamg/fitch/workflows/tests/badge.svg

@@ -1,0 +1,1 @@
+The logos were downloaded from https://commons.wikimedia.org/wiki/Category:Logos_of_Linux_distributions_by_name
