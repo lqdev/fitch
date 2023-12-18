@@ -7,7 +7,10 @@ open Lib.SystemInfo
 
 let loadLogo (logo: string) =
   let assembly = Assembly.GetExecutingAssembly()
-  use stream = assembly.GetManifestResourceStream $"Lib.distro_logos.{logo}.png"
+  let res = $"Lib.distro_logos.{logo}.png"
+  let okLogo = assembly.GetManifestResourceNames() |> Array.contains res
+  let logoRes = if okLogo then res else "Lib.distro_logos.linux.png"
+  use stream = assembly.GetManifestResourceStream logoRes
   let image = CanvasImage stream
   image.MaxWidth <- 16
   image.PixelWidth <- 2
