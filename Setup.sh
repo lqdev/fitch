@@ -8,6 +8,7 @@ echo " "
 echo "===================================================================== "
 echo " "
 
+cd Cli
 dotnet publish -c Release
 dotnet pack
 dotnet tool uninstall -g fitch

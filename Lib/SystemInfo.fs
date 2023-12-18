@@ -105,7 +105,12 @@ let getLocalIpAddress () =
 
   match addressList.IsEmpty with
   | true -> ""
-  | false -> addressList |> List.rev |> List.item 2 |> string
+  | false ->
+    addressList
+    |> List.rev
+    |> List.tryItem 2
+    |> Option.map string
+    |> Option.defaultValue ""
 
 let getPublicIpAddressAsync (ipProvider: string) =
   async {
