@@ -14,7 +14,7 @@ dotnet build
 
 dotnet publish -c Release
 
-sudo cp bin/Release/net7.0/linux-x64/publish/fitch /usr/bin/
+sudo cp bin/Release/net8.0/linux-x64/publish/fitch /usr/bin/
 
 cd ..
 
