@@ -6,7 +6,10 @@ open Spectre.Console.Rendering
 open Lib.SystemInfo
 
 let loadLogo (logo: string) =
-  NeofetchLogos.logoDictionary[logo]
+  NeofetchLogos.logoDictionary.TryGetValue logo
+  |> function
+    | true, l -> l
+    | false, _ -> NeofetchLogos.logoDictionary["unknown"]
   |> Colorize.colorize
   |> Text
   :> IRenderable

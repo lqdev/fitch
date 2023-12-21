@@ -43,6 +43,11 @@ let ubuntu =
     colors = [ "1"; "7"; "3" ]
     logo = readLogo "ubuntu" }
 
+let unknown =
+  { distro = "Unknown"
+    colors = [ "fg"; "8"; "3" ]
+    logo = readLogo "unknown" }
+
 let windows =
   { distro = "windows"; colors = ["6"; "7"]; logo = readLogo "windows" }
 
@@ -54,5 +59,6 @@ let logoDictionary =
     ("mint", mint)
     ("nixos", nixos)
     ("ubuntu", ubuntu)
+    ("unknown", unknown)
     ("windows", windows) ]
   |> Map.ofList
