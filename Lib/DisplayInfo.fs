@@ -6,7 +6,7 @@ open Spectre.Console.Rendering
 open Lib.SystemInfo
 
 let loadLogo (logo: string) =
-  NeofetchLogos.logoDictionary["debian"] |> Colorize.colorize |> Text
+  NeofetchLogos.logoDictionary[logo] |> Colorize.colorize |> Text
 
 let printLogoWithText (logo: string) (rows: IRenderable seq) =
   let logoPanel = loadLogo logo :> IRenderable
