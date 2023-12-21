@@ -43,20 +43,28 @@ dotnet tool install --global fitch
 1. Clone [fitch repo](http://www.luisquintanilla.me/github/fitch) in your Linux machine
 
     ```
-    git clone https://github.com/lqdev/fitch.git
+    git clone https://github.com/lqdev/fitch.git && cd fitch
     ```
 
-1. Nagivate to the project directory and run the script Setup.sh
+1. Add these lines inside `<PropertyGroup>` in the fitch.fsproj file
+
+    ```xml
+    <PublishSingleFile>true</PublishSingleFile>    
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    ```
+
+    This will generate a single executable file with all the dependencies included, a single executable file it's not supported in Nuget yet, so we need to do this manually.
+
+1. Run the script Setup.sh
 
     ```bash
-    cd fitch
+    ./Setup.sh
     ```
 
-    ```bash
-    bash ./Setup.sh
-    ```
+    ![Setup.sh](./images/setup.gif)
 
-   ![Setup.sh](./images/setup.gif)
+    Running this script will generate an executable called `fitch` in the *bin/Release/net8.0/linux-x64/publish* directory and copy it to the */usr/bin/* directory, so you can run the application from anywhere in your system.
 
    Running this script will generate an executable called `fitch` in the
    *bin/Release/net7.0/linux-x64/publish* directory and copy it to the */usr/bin/* directory.
@@ -69,7 +77,7 @@ dotnet tool install --global fitch
     fitch
     ```
 
-1. (Optional) Add the `fitch` command to your shell config file to start when your shell starts.
+1. (Optional) Add the `fitch` command to your shell config file to start when your shell starts
 
 ## To-Dos
 
