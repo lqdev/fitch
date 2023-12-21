@@ -1,1 +1,4 @@
-﻿DisplayInfo.displayInfo ()
+﻿open System
+
+DisplayInfo.displayInfo ()
+Console.ResetColor()
