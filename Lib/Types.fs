@@ -11,3 +11,8 @@ type Info =
     cpuModel: string
     localIp: string
     upTime: string }
+
+type DistroLogo =
+  { distro: string
+    logo: string
+    colors: string list }

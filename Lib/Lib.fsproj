@@ -7,6 +7,8 @@
 
     <ItemGroup>
         <Compile Include="Types.fs"/>
+        <Compile Include="Colorize.fs" />
+        <Compile Include="NeofetchLogos.fs" />
         <Compile Include="SystemInfo.fs"/>
         <Compile Include="DisplayInfo.fs"/>
     </ItemGroup>
@@ -18,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="distro_logos\*.png"/>
+        <EmbeddedResource Include="Logos\*.txt"/>
     </ItemGroup>
 
 </Project>

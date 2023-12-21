@@ -1,4 +1,4 @@
-module Tests
+module SystemInfo
 
 open Lib
 open Xunit

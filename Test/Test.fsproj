@@ -9,10 +9,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Tests.fs"/>
+        <Compile Include="Colorize.fs" />
+        <Compile Include="SystemInfo.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
-
+    
     <ItemGroup>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0"/>
         <PackageReference Include="Spectre.Console" Version="0.48"/>
