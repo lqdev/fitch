@@ -6,13 +6,10 @@ open Spectre.Console.Rendering
 open Lib.SystemInfo
 
 let loadLogo (logo: string) =
-  NeofetchLogos.logoDictionary[logo] |> Colorize.colorize |> Text
-
-let printLogoWithText (logo: string) (rows: IRenderable seq) =
-  let logoPanel = loadLogo logo :> IRenderable
-  let textPanel = Rows rows :> IRenderable
-  let columns = Columns [ logoPanel; textPanel ]
-  AnsiConsole.Write columns
+  NeofetchLogos.logoDictionary[logo]
+  |> Colorize.colorize
+  |> Text
+  :> IRenderable
 
 let displayInfo () =
   let info = systemInfo ()
@@ -29,6 +26,7 @@ let displayInfo () =
       Text($"CPU: {info.cpuModel}", Style(Color.Blue))
       Text($"LocalIP: {info.localIp}", Style(Color.Green))
     }
-    |> Seq.map (fun x -> x :> IRenderable)
-
-  printLogoWithText info.distroId rows
+  let logoPanel = loadLogo info.distroId
+  let textPanel = Rows rows :> IRenderable
+  let columns = Columns [textPanel; logoPanel]
+  AnsiConsole.Write columns
