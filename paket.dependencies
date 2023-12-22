@@ -1,0 +1,9 @@
+source https://api.nuget.org/v3/index.json
+
+nuget Spectre.Console
+nuget ByteSize
+nuget Microsoft.NET.Test.Sdk
+nuget xunit
+nuget xunit.runner.visualstudio
+nuget coverlet.collector
+nuget FSharp.Core
