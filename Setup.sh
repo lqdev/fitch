@@ -8,6 +8,8 @@ echo " "
 echo "===================================================================== "
 echo " "
 
+dotnet tool restore
+dotnet paket restore
 cd Cli
 dotnet publish -c Release
 dotnet pack
