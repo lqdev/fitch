@@ -5,13 +5,15 @@ Command line system information display utility for Linux systems built with .NE
 ![Fitch CLI Tool](./images/fitch-display.png)
 
 [![Generic badge](https://img.shields.io/badge/Made%20with-FSharp-rgb(1,143,204).svg)](https://shields.io/)
+![Tests][tests]
 
-**NOTE: This application should work on most Linux systems. However, it's only been tested on the following distributions:**
+**NOTE: This application should work on most Linux systems. However, it's only been tested on the following
+distributions:**
 
 - Arch
-  - Manjaro
+    - Manjaro
 - Debian
-  - Ubuntu
+    - Ubuntu
 - NixOS. For additional guidance, see this [article](https://www.luisquintanilla.me/wiki/nixos-dotnet-packages-source).
 
 ## Dependencies
@@ -64,6 +66,8 @@ dotnet tool install --global fitch
 
     Running this script will generate an executable called `fitch` in the *bin/Release/net8.0/linux-x64/publish* directory and copy it to the */usr/bin/* directory, so you can run the application from anywhere in your system.
 
+   Running this script will generate an executable called `fitch` in the
+   *bin/Release/net7.0/linux-x64/publish* directory and copy it to the */usr/bin/* directory.
 
 ## Run application
 
@@ -82,3 +86,6 @@ dotnet tool install --global fitch
 ## Acknowledgements
 
 This project was inspired by [Nitch](https://github.com/unxsh/nitch), [Neofetch](https://github.com/dylanaraps/neofetch) and made with [WSL](https://learn.microsoft.com/en-us/windows/wsl/) 🐧
+
+
+[tests]: https://github.com/lamg/fitch/workflows/tests/badge.svg

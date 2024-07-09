@@ -8,16 +8,10 @@ echo " "
 echo "===================================================================== "
 echo " "
 
-cd src
-
-dotnet build
-
+dotnet tool restore
+dotnet paket restore
+cd Cli
 dotnet publish -c Release
-
-sudo cp bin/Release/net8.0/linux-x64/publish/fitch /usr/bin/
-
-cd ..
-
-fitch
-
-
+dotnet pack
+dotnet tool uninstall -g fitch
+dotnet tool install -g fitch --add-source nupkg
